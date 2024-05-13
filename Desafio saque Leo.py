@@ -35,6 +35,7 @@ while True:
             print("Excedeu o limite de saque diario, operação não realizada.")
         elif valor > 0:
             saldo -= valor
+            numero_saque = numero_saque + 1
             print(f"Saque : R${valor:.2f}\n Novo saldo :{saldo:.2f} ")
         else :
             print("O valor informado é invalido, operação não realizada")
